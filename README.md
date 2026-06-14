@@ -46,6 +46,41 @@ The goal of this project is to build a document-based question-answering system.
 
 This project helped me understand how RAG systems work internally, including document ingestion, chunking, embeddings, vector databases, semantic search, retrieval, prompt construction, and LLM-based answer generation.
 
+## How to Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/harsha32002/rag-document-chatbot.git
+cd rag-document-chatbot
+```
+
+2. Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Create a `.env` file and add your OpenAI API key:
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+5. Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+
 ## Future Improvements
 
 * Add support for multiple PDFs
@@ -57,3 +92,7 @@ This project helped me understand how RAG systems work internally, including doc
 ## Demo Screenshot
 
 ![RAG Chatbot Demo](screenshots/rag_answer_demo.png)
+
+
+
+
